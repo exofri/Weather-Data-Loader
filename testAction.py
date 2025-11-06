@@ -16,8 +16,8 @@ def commit_and_push():
     today_date = today.strftime('%Y-%m-%d')
     
     print("Commit + Push sur GitHub...")
-    subprocess.run(["git", "config", "--global", "user.meysam.shamsi@gmail.com", "actions@github.com"])
-    subprocess.run(["git", "config", "--global", "user.exofri", "GitHub Actions"])
+    subprocess.run(["git", "config", "--global", "user.email", "actions@github.com"])
+    subprocess.run(["git", "config", "--global", "user.name", "GitHub Actions"])
     subprocess.run(["git", "add", "."])
     subprocess.run(["git", "commit", "-m", f"Update files {today_date+current_time}"])
     subprocess.run(["git", "push"])
@@ -71,7 +71,7 @@ def update_city(city):
                  paris_humadity])
 
     # Write CSV file
-    with open(f"{city}.txt", "wt") as fp:
+    with open(f"{city}.txt", "w") as fp:
         writer = csv.writer(fp, delimiter=",")
         writer.writerow(i for i in headers)
         writer.writerows(file[-24*30:])
