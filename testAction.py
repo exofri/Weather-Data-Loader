@@ -3,7 +3,7 @@
 import csv
 import random
 
-from datetime import date
+import datetime
 import time
 import os
 import subprocess
@@ -21,7 +21,7 @@ def update_city(city):
 
     t = time.localtime()
     current_time = time.strftime(" %H:%M:%S", t)
-    today = date.today()
+    today = datetime.date.today()
     # dd/mm/YY
     today_date = today.strftime('%Y-%m-%d')
     
@@ -72,28 +72,10 @@ def update_city(city):
 
     return tmp,humidity
 
-# while True:
-    
-#     t = time.localtime()
-#     current_time = time.strftime(" %H:%M:%S", t)
-#     today = date.today()
-#     # dd/mm/YY
-#     today_date = today.strftime('%Y-%m-%d')
-    
-#     for c in ["Paris","Strasbourg","Marseille","Lille"]:
-#         tmp,humidity=update_city(c)
-#         print(f"City:{c}, T:{tmp}, H:{humidity}\n\n")
-    
-#     print(today_date+current_time)
-#     os.system('git commit -a -m "now"')
-#     os.system('git push')
-
-#     time.sleep(3600)
-
 if __name__ == "__main__":
     t = time.localtime()
     current_time = time.strftime(" %H:%M:%S", t)
-    today = date.today()
+    today = datetime.date.today()
     # dd/mm/YY
     today_date = today.strftime('%Y-%m-%d')
     
