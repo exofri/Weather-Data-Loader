@@ -51,11 +51,12 @@ def update_city(city):
     
     file=[]
     # Read CSV file
-    with open(f"{city}.txt") as f:
-        reader = csv.reader(f)
-        headers = next(reader)
-        for row in reader:
-            file.append([r for r in row])
+    if os.path.isfile(f"{city}.txt"):
+        with open(f"{city}.txt") as f:
+            reader = csv.reader(f)
+            headers = next(reader)
+            for row in reader:
+                file.append([r for r in row])
 
     file.append([today_date+current_time,
                  paris_tmp,
