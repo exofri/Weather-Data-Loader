@@ -10,7 +10,7 @@ name: Upload wheather city
 
 on:
   schedule:
-    - cron: '0 18 * * 1-5'
+    - cron: '0 * * * *'  # runs at the start of every hour
   workflow_dispatch:
 
 jobs:
