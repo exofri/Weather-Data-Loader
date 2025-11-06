@@ -10,7 +10,7 @@ import subprocess
 
 def commit_and_push():
     print("Commit + Push sur GitHub...")
-    subprocess.run(["git", "config", "--global", "user.meysam.shamsi@gmail.com, "actions@github.com"])
+    subprocess.run(["git", "config", "--global", "user.meysam.shamsi@gmail.com", "actions@github.com"])
     subprocess.run(["git", "config", "--global", "user.exofri", "GitHub Actions"])
     subprocess.run(["git", "add", "."])
     subprocess.run(["git", "commit", "-m", f"Update files {datetime.now().strftime('%Y-%m-%d')}"])
