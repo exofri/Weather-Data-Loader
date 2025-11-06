@@ -1,0 +1,2 @@
+Date,Temperature,Humidity
+2025-11-06 10:32:36,14,72
