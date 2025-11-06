@@ -58,7 +58,7 @@ def update_city(city):
             for row in reader:
                 file.append([r for r in row])
     else:
-        header=["Date","Temperature","Humidity"]
+        headers=["Date","Temperature","Humidity"]
 
     file.append([today_date+current_time,
                  paris_tmp,
