@@ -8,7 +8,15 @@ import time
 import os
 import subprocess
 
-
+def commit_and_push():
+    print("Commit + Push sur GitHub...")
+    subprocess.run(["git", "config", "--global", "user.meysam.shamsi@gmail.com, "actions@github.com"])
+    subprocess.run(["git", "config", "--global", "user.exofri", "GitHub Actions"])
+    subprocess.run(["git", "add", "."])
+    subprocess.run(["git", "commit", "-m", f"Update files {datetime.now().strftime('%Y-%m-%d')}"])
+    subprocess.run(["git", "push"])
+    print("TOUT PUSHÉ SUR GIT !")
+    
 def update_city(city):
 
     t = time.localtime()
@@ -91,7 +99,8 @@ if __name__ == "__main__":
         print(f"City:{c}, T:{tmp}, H:{humidity}\n\n")
     
     print(today_date+current_time)
-    # git_commit_push()
+    commit_and_push()
+    print("successfuly commited!")
 
-    os.system('git commit -a -m "now"')
-    os.system('git push')
+    # os.system('git commit -a -m "now"')
+    # os.system('git push')
