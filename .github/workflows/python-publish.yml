@@ -9,8 +9,9 @@
 name: Upload wheather city
 
 on:
-  release:
-    types: [published]
+  schedule:
+    - cron: '0 18 * * 1-7'
+  workflow_dispatch:
 
 jobs:
   deploy:
