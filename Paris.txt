@@ -1,5 +1,4 @@
 Date,Temperature,Humidity
-2025-11-25 19:21:49,Unknown,Unknown
 2025-11-25 20:28:40,Unknown,Unknown
 2025-11-25 21:23:23,Unknown,Unknown
 2025-11-25 22:25:17,Unknown,Unknown
@@ -719,3 +718,4 @@ Date,Temperature,Humidity
 2025-12-28 18:36:25,1,86
 2025-12-28 19:20:05,0,93
 2025-12-28 20:29:17,Unknown,93
+2025-12-28 21:23:39,-1,93
