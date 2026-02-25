@@ -1,5 +1,4 @@
 Date,Temperature,Humidity
-2026-01-17 16:30:02,Unknown,Unknown
 2026-01-17 17:22:15,Unknown,81
 2026-01-17 18:35:40,2,93
 2026-01-17 19:20:00,2,87
@@ -719,3 +718,4 @@ Date,Temperature,Humidity
 2026-02-25 13:20:51,Unknown,Unknown
 2026-02-25 14:58:34,Unknown,Unknown
 2026-02-25 16:13:11,Unknown,Unknown
+2026-02-25 18:03:30,Unknown,Unknown
